@@ -7,7 +7,7 @@ fn part_one(measurements: &[u32]) -> u32 {
             count += 1;
         }
     }
-    return count;
+    count
 }
 
 fn part_two(measurements: &[u32]) -> u32 {
