@@ -1,6 +1,6 @@
 use std::fs::read_to_string;
 
-fn part_one(output_values: &Vec<Vec<&str>>) -> u32 {
+fn part_one(output_values: &[Vec<&str>]) -> u32 {
     output_values
         .concat()
         .iter()
@@ -11,7 +11,7 @@ fn part_one(output_values: &Vec<Vec<&str>>) -> u32 {
         .count() as u32
 }
 
-fn part_two(input_values: &Vec<Vec<&str>>, output_values: &Vec<Vec<&str>>) -> u32 {
+fn part_two(input_values: &[Vec<&str>], output_values: &[Vec<&str>]) -> u32 {
     let mut numbers_decoded = Vec::new();
     for (i, entry) in output_values.iter().enumerate() {
         let mut chars = String::new();
